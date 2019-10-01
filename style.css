@@ -31,14 +31,12 @@ header {
   flex-direction: column;
 }
 
-h1.f-headline-ns {
-  font-size: 25vmin;
-}
-h1.f1 {
-  font-size: 25vmin;
+.f-headline-ns {
+  font-size: 15vmin;
 }
 
 .f1-ns,
+.f2-ns,
 p.text {
   margin: 0 0 0.5rem 0;
 }
@@ -150,8 +148,8 @@ div.circle.Closed {
   color: #e7040f;
 }
 div.arrow {
-  width: 10vmin;
-  height: 10vmin;
+  width: 5rem;
+  height: 5rem;
 }
 
 /*==============
@@ -195,7 +193,12 @@ div.arrow {
 ====================================*/
 @media (min-width: 992px) {
   b.mb4-ns {
-    margin-bottom: 1.75rem;
+    margin-bottom: 0.9rem;
+  }
+}
+@media (max-width: 796px) {
+  .f-headline-ns {
+    font-size: 12vmin;
   }
 }
 @media (max-width: 768px) {
@@ -212,12 +215,12 @@ div.arrow {
     grid-template-rows: auto auto;
   }
   b.mb4-ns {
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.8rem;
   }
 }
 
 @media (max-width: 579px) {
   b.mb4-ns {
-    margin-bottom: 0.85rem;
+    margin-bottom: 0.3rem;
   }
 }
