@@ -28,6 +28,13 @@ header {
   flex-direction: column;
 }
 
+h1.f-headline-ns {
+  font-size: 25vmin;
+}
+h1.f1 {
+  font-size: 25vmin;
+}
+
 .f1-ns,
 p.text {
   margin: 0 0 0.5rem 0;
@@ -160,4 +167,4 @@ div.circle.Home {
   }
 }
 
-
+@media (min-width: );
