@@ -73,15 +73,17 @@ p.text {
 }
 
 .clients-list {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+  max-width: 100%;
+  columns: 2 auto;
 }
 
 div.clients-list > p {
   margin: 0 1rem 1rem 0;
-  max-width: 33%;
+  max-width: 100%;
 }
 
 div.circle {
@@ -157,3 +159,5 @@ div.circle.Home {
     grid-template-rows: auto auto;
   }
 }
+
+
