@@ -27,13 +27,11 @@ header {
 }
 
 .section-layout {
-  height: 95vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 
-.f1,
+.f1-ns,
 p.text {
   margin: 0 0 0.5rem 0;
 }
@@ -77,6 +75,17 @@ p.text {
   grid-row-end: 2;
 }
 
+.clients-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+div.clients-list > p {
+  margin: 0 1rem 1rem 0;
+  max-width: 33%;
+}
 @media (max-width: 991px) {
   .grid-container--content {
     grid-auto-columns: 0.25fr;
