@@ -1,5 +1,8 @@
 body {
   min-height: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 header {
@@ -104,7 +107,33 @@ div.circle {
   transition: background-color 1s;
   background-color: #999;
 }
-div.circle.Home {
+div.circle {
+  animation: spin 3000ms linear infinite;
+  -webkit-animation: spin 3000ms linear infinite;
+  -moz-animation: spin 3000ms linear infinite;
+}
+
+div.circle.Avail {
+  background: linear-gradient(45deg, #000, #000 100%),
+    linear-gradient(135deg, #a5cf6f, #a5cf6f),
+    linear-gradient(225deg, #a5cf6f, #a5cf6f),
+    linear-gradient(225deg, #000, #000);
+  background-size: 50% 50%;
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+div.circle.Avail {
+  background: linear-gradient(45deg, #000, #000 100%),
+    linear-gradient(135deg, #a5cf6f, #a5cf6f),
+    linear-gradient(225deg, #a5cf6f, #a5cf6f),
+    linear-gradient(225deg, #000, #000);
+  background-size: 50% 50%;
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+div.circle.Closed {
   background: linear-gradient(45deg, #000, #000 100%),
     linear-gradient(135deg, #e7040f, #e7040f),
     linear-gradient(225deg, #e7040f, #e7040f),
@@ -112,9 +141,17 @@ div.circle.Home {
   background-size: 50% 50%;
   background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
   background-repeat: no-repeat;
-  animation: spin 3000ms linear infinite;
-  -webkit-animation: spin 3000ms linear infinite;
-  -moz-animation: spin 3000ms linear infinite;
+}
+
+.text-avail {
+  color: #a5cf6f;
+}
+.text-closed {
+  color: #e7040f;
+}
+div.arrow {
+  width: 10vmin;
+  height: 10vmin;
 }
 
 /*==============
@@ -156,7 +193,16 @@ div.circle.Home {
 /*==============
 /* * Media Queries 
 ====================================*/
-
+@media (min-width: 992px) {
+  b.mb4-ns {
+    margin-bottom: 1.75rem;
+  }
+}
+@media (max-width: 768px) {
+  b.mb4-ns {
+    margin-bottom: 0.8rem;
+  }
+}
 @media (max-width: 991px) {
   .grid-container--content {
     grid-auto-columns: 0.25fr;
@@ -165,6 +211,13 @@ div.circle.Home {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
   }
+  b.mb4-ns {
+    margin-bottom: 1.2rem;
+  }
 }
 
-@media (min-width: );
+@media (max-width: 579px) {
+  b.mb4-ns {
+    margin-bottom: 0.85rem;
+  }
+}
