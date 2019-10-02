@@ -198,9 +198,17 @@ div.arrow {
     margin-bottom: 0.75rem;
   }
 }
+@media (min-width: 30rem) {
+  .mb2-ns {
+    margin-bottom: 0.8rem;
+  }
+}
 @media (max-width: 796px) {
   .f-headline-ns {
     font-size: 10vmin;
+  }
+  .mb2-ns {
+    margin-bottom: 0.4rem;
   }
 }
 
@@ -217,19 +225,22 @@ div.arrow {
     margin-bottom: 0.75rem;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 769px) {
   b.mb4-ns {
-    margin-bottom: 0.6rem;
+    margin-bottom: 0;
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 768px) {
   b.mb4-ns {
-    margin-bottom: 0.4rem;
+    margin-bottom: 0;
   }
 }
 
 @media (max-width: 579px) {
+  .flex-row-s {
+    flex-direction: row;
+  }
   b.mb4-ns {
     margin-bottom: 0;
   }
@@ -240,5 +251,11 @@ div.arrow {
   div.circle {
     width: 1.2rem;
     height: 1.2rem;
+  }
+  .f-headline-ns {
+    font-size: 8vmin;
+  }
+  .mb2-ns {
+    margin-bottom: 0;
   }
 }
