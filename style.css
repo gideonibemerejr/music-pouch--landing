@@ -154,6 +154,14 @@ div.arrow {
   height: 5rem;
 }
 
+div.right {
+  float: right;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 /*==============
 /* * Animations
 ====================================*/
