@@ -12,6 +12,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
       - name: Deploy to www subdomain
-        run: aws s3 sync ./ s3://www.musicpouch.us --delete
+        run: aws s3 sync ./ s3://${{ secrets.WWW_AWS_S3_BUCKET }} --delete
       - name: Deploy to domain
-        run: aws s3 sync ./ s3://musicpouch.us --delete
+        run: aws s3 sync ./ s3://${{ secrets.REGULAR_AWS_S3_BUCKET }} --delete
